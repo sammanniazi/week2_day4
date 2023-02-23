@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: linear-gradient(
+      90deg,
+      #2b2e4a,
+      #1b3044
+    );
+    font-family: Poppins, sans-serif;
+    color: #fff;
+  }
+
+  
+  .container {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    width: 70%;
+    max-width: 600px;
+    padding: 60px 0;
+    color: black;
+    background-color: #fff4d2;
+    border-radius: 15px;
+  }
+  
+  #line {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .flex-button {
+    display: inline;
+    width: 100%;
+  }
+  
+  input {
+    border: none;
+  }
+  
+  input[type="text"] {
+    width: 55%;
+    padding: 5px 10px;
+    outline: none;
+    font-size: 1.2rem;
+    color: black;
+    background-color: #ddcdcd;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 85%;
+    margin: 10px auto;
+  }
+  
+  input[type="text"]:disabled {
+    color: rgb(10, 9, 9);
+    width: 70%;
+    background-color: #ddcdcd;
+  }
+  
+  input[type="button"] {
+    padding: 5px;
+    font-size: 1.04rem;
+    color: white;
+    margin: 0 -3px;
+  }
+  
+  #add-btn {
+    margin-right: -4px;
+    background-color: #e9adad;
+  }
+  
+  #del-btn {
+    background-color: #eb2525;
+  }
+  
+  input[type="button"]:active {
+    transform: scale(0.94);
+  }
+  
+  .new-tasks {
+    margin: 25px auto;
+  }
+  
+  .update-task {
+    padding-right: 30px;
+    background-color: #a3a6ab;
+    border-radius: 10px;
+  }
+  
+  .rename-task {
+    background-color: #a3a6ab;
+    border-radius: 10px;
+    padding-left: 30px;
+  }
+  
+  .del-task {
+    background-color: #a3a6ab;
+    border-radius: 10px;
+  }
+  .don-task{
+    background-color: #a3a6ab;
+    border-radius: 10px;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 85%;
+    margin: 10px auto;
+  }
+
+
+
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .task {
+      display: inline;
+    }
+    .flex-button {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .task {
+      display: block;
+    }
+    .flex-button {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  
